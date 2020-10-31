@@ -1,4 +1,5 @@
 import 'package:Meat_Delivery/widgets/types_Of_steak.dart';
+import 'package:Meat_Delivery/widgets/your_box.dart';
 import 'package:flutter/material.dart';
 
 class Catagory extends StatelessWidget {
@@ -59,6 +60,7 @@ class Catagory extends StatelessWidget {
               height: 20.0,
             ),
             TypesOfSteaks(),
+
           ],
         ),
       ),
@@ -87,16 +89,6 @@ class Catagory extends StatelessWidget {
                       ),
                       child: Row(
                         children: <Widget>[
-                          // Container(
-                          //    height:80.0,
-                          //    width: 65.0,
-                          //     padding: EdgeInsets.all(15.0),
-                          //     decoration: BoxDecoration(
-                          //         borderRadius: BorderRadius.circular(20.0),
-                          //         color: Color(0xFFb7e1ed)
-                          //       ),
-                          //     child:  Image.asset(imgPath,height: 70.0,width: 70.0 ,),
-                          // ),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(10.0),
                             child: Image(

@@ -3,31 +3,13 @@ import 'package:flutter/material.dart';
 class YourBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Container(
-          padding: EdgeInsets.symmetric(horizontal:15.0 ),
-          child:  Text("What's in your Box",
-                    style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
-                    ),
-        ),
-        Container(
-          padding: EdgeInsets.all(10.0),
-          child: ListView(
-            scrollDirection: Axis.horizontal,
-            children: <Widget>[
-              _boxContain("Net weight of", "prepped meat only ", "asset/foot-scale.jpg"),
-              _boxContain("Temperature", "Between 4 deg C -8", "asset/basal-body-temperature.jpg")
-            ],
-          ),
-        )
-       
-               
+    return Row(
+      children: [
+        _boxContain("NEt Weight", "prepped meat only", "asset/foot-scale.jpg")
       ],
     );
   }
-  _boxContain(String netW, String tem, String imgPath) {
+   _boxContain(String netW, String tem, String imgPath) {
     return Container(
         padding: EdgeInsets.all(15.0),
         child: InkWell(
@@ -88,4 +70,5 @@ class YourBox extends StatelessWidget {
           ),
         ));
   }
+
 }
